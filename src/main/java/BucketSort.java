@@ -1,6 +1,14 @@
 public class BucketSort implements ISort{
 
-    String id = "Bucket Sortable";
+    public String getName(){
+        String name = ("Bubble Sort");
+        return name;
+    }
+
+    public String getId(){
+        String id = ("101");
+        return id;
+    }
 
     public int[] sortable(int[] arr) {
 

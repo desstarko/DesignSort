@@ -1,3 +1,4 @@
+
 import static org.junit.Assert.*;
 
 public class SortTest {
@@ -16,14 +17,14 @@ public class SortTest {
 
     @org.junit.Test
     public void bucketSortable() throws Exception {
-        int[] arr = {4,3,2,1};
-        int[] arrSort = {1,2,3,4};
+        int[] arr = {35,46,14,41,38};
+        int[] arrSort = {14,35,38,41,46};
         BucketSort bucketSort = new BucketSort();
         int[] sortableArr = bucketSort.sortable(arr);
         assertArrayEquals(arrSort, sortableArr);
-        /*for (int a: sortableArr){
+        for (int a: sortableArr){
             System.out.println(a);
-        }*/
+        }
     }
 
     @org.junit.Test

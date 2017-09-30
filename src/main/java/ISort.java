@@ -1,6 +1,7 @@
 public interface ISort {
 
-    String id = null;
+    public String getId();
+    public String getName();
     int[] sortable(int[] array);
 
 }
